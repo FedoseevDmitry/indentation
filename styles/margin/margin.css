@@ -1,0 +1,34 @@
+.margin {
+  display: flow-root;
+}
+
+.margin__container {
+  min-height: 840px;
+}
+
+.margin__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.margin__img {
+  float: left;
+}
+
+.margin__img:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.margin__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.margin__wrapper_float-left {
+  clear: both;
+  float: left;
+  max-width: 480px;
+  margin-right: 40px;
+}

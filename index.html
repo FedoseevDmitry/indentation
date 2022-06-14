@@ -23,21 +23,21 @@
   </section>
 
   <section class="content">
-    <div class="container container_background-gray">
+    <div class="container content__container">
 
       <h2 class="content__title">Содержание:</h2>
 
       <ol class="content__list">
         <li class="content__item">
-          <a class="content__link" href="#margin" >Отступ задается от предыдущего элемента к следующему</a>
+          <a class="content__link" href="#margin">Отступ задается от предыдущего элемента к следующему</a>
         </li>
 
         <li class="content__item">
-          <a class="content__link" href="#dom" >Отступ задается последнему возможному элементу в DOM-дереве</a>
+          <a class="content__link" href="#dom">Отступ задается последнему возможному элементу в DOM-дереве</a>
         </li>
 
         <li class="content__item">
-          <a class="content__link" href="#zeroing" >Для последнего элемента группы отступ обнуляется</a>
+          <a class="content__link" href="#zeroing">Для последнего элемента группы отступ обнуляется</a>
         </li>
       </ol>
 
@@ -45,7 +45,7 @@
   </section>
 
   <section class="margin" id="margin">
-    <div class="container">
+    <div class="container margin__container">
       <h2 class="margin__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
 
       <img class="margin__img" src="styles/margin/img/mr-mb.jpg" alt="Пример правильного использования margin" width="560" height="415">
@@ -55,9 +55,11 @@
       <p class="margin__text">(!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.</p>
       <p class="margin__text">Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
 
-      <p class="margin__text">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
-      <p class="margin__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-      <p class="margin__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+      <div class="margin__wrapper_float-left">
+        <p class="margin__text">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
+        <p class="margin__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+        <p class="margin__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+      </div>
 
       <img class="margin__img" src="styles/margin/img/pt-pl.jpg" alt="Пример правильного использования padding" width="560" height="279">
     </div>
@@ -77,19 +79,19 @@
 
       <div class="dom__wrapper">
 
-        <img class="dom__img" src="styles/dom/img/adjacent-elem.jpg" alt="Пример с сайта и редактора о отступах за счет соседних элементов" width="1081" height="427">
+        <img class="dom__img dom__img_little-margin" src="styles/dom/img/adjacent-elem.jpg" alt="Пример с сайта и редактора о отступах за счет соседних элементов" width="1081" height="427">
 
-        <p class="dom__text"><b>ВАЖНО:</b> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+        <p class="dom__text dom__text_wrapper"><b>ВАЖНО:</b> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
 
       </div>
 
-      <p class="dom__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+      <p class="dom__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
 
       <p class="dom__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
 
       <img class="dom__img" src="styles/dom/img/nesting.jpg" alt="Пример кода со вложенностью" width="965" height="164">
 
-      <p class="dom__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
+      <p class="dom__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
 
       <img class="dom__img" src="styles/dom/img/pt.jpg" alt="Пример с сайта и редактора про отступы сверху через padding" width="1023" height="504">
 
@@ -108,7 +110,7 @@
 
       <img class="zeroing__img" src="styles/zeroing/img/mb-last.jpg" alt="Пример одинакового расстояния блоков" width="600" height="600">
 
-      <p class="zeroing__text">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
+      <p class="zeroing__text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
 
       <img class="zeroing__img" src="styles/zeroing/img/mb-last-pt-pb.jpg" alt="Визуальный пример обнуления margin у последних элементов" width="600" height="607">
 
@@ -132,7 +134,7 @@
   </section>
 
   <section class="summary">
-    <div class="container container_background-gray">
+    <div class="container summary__container">
       <h2 class="summary__title">Подытожим:</h2>
 
       <ul class="summary__list">

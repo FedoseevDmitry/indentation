@@ -1,0 +1,36 @@
+.dom__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.dom__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.dom__wrapper {
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.dom__text_wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #5E5E5E;
+}
+
+.dom__img {
+  margin-bottom: 30px;
+}
+
+.dom__img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.dom__img_little-margin {
+  margin-bottom: 15px;
+}

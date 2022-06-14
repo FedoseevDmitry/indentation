@@ -1,0 +1,24 @@
+.summary__container {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  min-height: 385px;
+  max-width: 1140px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+.summary__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.summary__list {
+  margin-bottom: 30px;
+}
+
+.summmary__item {
+  margin-bottom: 10px;
+}

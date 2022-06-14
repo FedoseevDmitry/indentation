@@ -1,0 +1,14 @@
+.hero {
+  padding-top: 60px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.hero__text:not(:last-child) {
+  margin-bottom: 30px;
+}

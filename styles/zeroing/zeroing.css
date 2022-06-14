@@ -1,0 +1,19 @@
+.zeroing__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.zeroing__text {
+  margin-bottom: 30px;
+}
+
+.zeroing__img:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.zeroing__img {
+  margin: 0 auto;
+  display: block;
+}

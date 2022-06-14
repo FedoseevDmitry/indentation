@@ -10,12 +10,12 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
   color: #000;
-  background-color: #E5E5E5;
+  background-color: #fff;
 }
 
 img {
@@ -35,7 +35,13 @@ a {
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: '—';
+  padding-left: 21px;
+  list-style-type: '— ';
+}
+
+ol {
+  margin: 0;
+  padding-left: 25px;
 }
 
 h1, h2, h3, p, figure, fieldset {
