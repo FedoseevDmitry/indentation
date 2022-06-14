@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+  background-color: #E5E5E5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: '—';
+}
+
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}
+
+section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin: 0 auto;
+}
