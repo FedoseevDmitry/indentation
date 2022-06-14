@@ -1,9 +1,13 @@
+.content__wrapper {
+  padding-top: 25px;
+}
+
+
 .content__title {
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
   margin-bottom: 20px;
-  padding-top: 25px;
 }
 
 .content__link {

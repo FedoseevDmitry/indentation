@@ -7,18 +7,21 @@
   padding-right: 30px;
 }
 
+.summary__wrapper {
+  padding-top: 25px;
+}
+
 .summary__title {
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
   margin-bottom: 20px;
-  padding-top: 25px;
 }
 
 .summary__list {
   margin-bottom: 30px;
 }
 
-.summmary__item {
+.summmary__item:not(:last-child) {
   margin-bottom: 10px;
 }
